@@ -5,8 +5,12 @@
 }
 
 .mainPanel {
-    color: #282c34;
     padding: 10px;
+}
+
+.selectedColor {
+    color: #282c34;
+    text-transform: uppercase;
 }
 
 .controls {

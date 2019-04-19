@@ -1,4 +1,5 @@
-import React, {useState, useEffect, createRef, Children, cloneElement} from 'react';
+import React, {useState, useEffect, createRef, cloneElement} from 'react';
+import PropTypes from 'prop-types';
 
 export const Dialog = (props) => {
     const container = createRef();
@@ -20,12 +21,14 @@ export const Dialog = (props) => {
 
     return (
         <div ref={container}>
-            {Children.map(props.children, (child) => (
-                cloneElement(child, {
-                    isOpen,
-                    toggle: toggle(!isOpen),
-                })
-            ))}
+            {cloneElement(props.children, {
+                isOpen,
+                toggle: () => toggle(!isOpen),
+            })}
         </div>
     )
+};
+
+Dialog.propTypes = {
+    children:  PropTypes.element.isRequired
 };

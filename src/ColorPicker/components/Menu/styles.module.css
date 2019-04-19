@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menuHolder {
+    position: absolute;
+    top: calc(100% + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    min-width: 150px;
+    border: 1px solid #282c34;
+}
+
+.colorRow {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+}
+
+.colorRow:hover {
+    background-color: #f9f9f9;
+}
+
+.color {
+    width: 15px;
+    height: 15px;
+}
