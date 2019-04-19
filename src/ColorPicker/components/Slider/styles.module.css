@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+}
+
+.sliderHolder {
+    position: absolute;
+    top: calc(100% + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #fff;
+    border-color: #282c34;
+    min-width: 200px;
+}
+
+.slider {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.slider .rangeInput {
+    margin-left: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.controls .control {
+    margin-left: 15px;
+}
+
