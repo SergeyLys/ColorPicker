@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    max-width: 300px;
+    border: 1px solid #282c34;
+}
+
+.mainPanel {
+    color: #282c34;
+    padding: 10px;
+}
+
+.controls {
+    margin-left: auto;
+    display: flex;
+}
+
+.control {
+    padding: 5px;
+    border-left: 1px solid #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
